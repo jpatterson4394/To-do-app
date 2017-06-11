@@ -4,10 +4,12 @@
         <title> Jordan's to do 
         </title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     </head>
    <body>
         <h1 style="color:aquamarine;">Jordan's to do list</h1>
- <div> <table>
+ <div> <table id="myTable">
       <tr>
           <th>completed? </th>
           <th>Task </th>
@@ -24,17 +26,17 @@
       </tr>
       <tr>
       <td> <input type="checkbox" name="done"/></td>   
-          <td> take out trash</td>
+          <td> <a href="/takeouttrash.html"> take out trash </a></td>
       <td>2:30 pm</td>
       <td class="pomodoro-estimate">5 min</td>
       <td> home</td>
       </tr>
   </table>
   </div>
- <form>
-     <input type="text" placeholder="Add a new to do..." name=""/>
-     <input type="number" placeholder="Add a new time..." value="Submit"/>
-     <input id="add-new-todo-button" type="submit" value="Add to do">
- </form> 
+<div id="new-todo-block">
+     <input class="text-input" id="new-todo-description" type="text" placeholder="Add a new to do..." name=""/>
+     <input class="text-input" id="new-pomodoro-estimate" type="number" placeholder="Add a new time..." value="Submit"/>
+     <input class="button" id="add-new-todo-button" type="submit" value="Add to do">
+</div>
    </body> 
 </html>
