@@ -3,9 +3,10 @@
     <head>
         <title> Jordan's to do 
         </title>
+        <link rel="stylesheet" href="index.css">
     </head>
    <body>
-        <h1>Jordan's to do list</h1>
+        <h1 style="color:aquamarine;">Jordan's to do list</h1>
   <table>
       <tr>
           <th>completed? </th>
@@ -18,20 +19,20 @@
           <td> <input type="checkbox" name="done"/> </td>
           <td> <a href="/show.html"> homework</a></td>
       <td>2:30 pm</td>
-      <td>45 min</td>
+      <td class="pomodoro-estimate">45 min</td>
       <td> home</td>
       </tr>
       <tr>
       <td> <input type="checkbox" name="done"/></td>   
           <td> take out trash</td>
       <td>2:30 pm</td>
-      <td>45 min</td>
+      <td class="pomodoro-estimate">5 min</td>
       <td> home</td>
       </tr>
   </table>
  <form>
      <input type="text" name=""/>
-     <input type="submit" value="Submit"/>
+     <input type="number" value="Submit"/><input id="add-new-todo-button" type="submit" value="Add to do">
  </form> 
    </body> 
 </html>
