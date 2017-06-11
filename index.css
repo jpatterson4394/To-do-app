@@ -1,7 +1,16 @@
 html{
   font-family: sans-serif;
+background-color: grey;
 }
 
+div{
+  background-color: #F1C40F;
+}
+
+td{
+  padding: 15px;
+  margin-bottom:10px;
+}
 .pomodoro-estimate{
   font-weight: bold;
   color: #F44336;
